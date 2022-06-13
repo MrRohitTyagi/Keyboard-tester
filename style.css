@@ -1,8 +1,8 @@
-:root{
+:root {
 
-    --color:white;
-    --bgcol:rgb(38, 37, 37);
-    --border:white;
+    --color: white;
+    --bgcol: rgb(38, 37, 37);
+    --border: white;
 }
 
 .lane {
@@ -11,7 +11,7 @@
 }
 
 .key {
-    
+
     border: 2px solid var(--border);
     width: 4vw;
     height: 8vh;
@@ -42,13 +42,14 @@ body {
 .center {
     display: flex;
     justify-content: center;
-    
+
     font-family: cursive;
     font-size: xx-large;
 }
+
 .center1 {
     display: flex;
-    margin-left: 2rem;    
+    margin-left: 2rem;
     justify-content: space-evenly;
     align-items: center;
     font-family: cursive;
@@ -66,42 +67,44 @@ nav {
     height: 3rem;
     margin-bottom: 3rem;
 }
-.key:hover{
+
+.key:hover {
     border: 2px solid red;
     animation: ani infinite 0.5s;
-    
+
 }
 
-#btn{
+#btn {
 
     border: 2px solid white;
     border-radius: 5px;
 }
-label{
+
+label {
     margin-left: 2rem;
     margin-right: 2rem;
-    
-}
-#cars{
 
-    height:2rem;
+}
+
+#cars {
+
+    height: 2rem;
     padding: 4px;
 }
 
-.keyboardFull{
-    
-}
-.numpad{
-    
-    display:none;
-    
+.keyboardFull {}
+
+.numpad {
+
+    display: none;
+
     height: auto;
 }
 
 
 
 .keyn {
-    
+
     border: 2px solid var(--border);
     width: 4vw;
     height: 8vh;
@@ -118,30 +121,60 @@ label{
 
 }
 
-.keyn:hover{
+.keyn:hover {
     border: 2px solid red;
     animation: ani infinite 0.5s;
-    
+
 }
-.gren{
+
+.gren {
     border: 2.1px solid greenyellow !important;
 }
 
+.info {
+    display: none;
+    border: 2px solid red;
+    border-radius: 5px;
+    padding:0.5rem
+}
 
 @keyframes ani {
 
-    25%{
+    25% {
         border-color: red;
-        
+
     }
-    50%{
+
+    50% {
         border-color: blue;
     }
-    75%{
+
+    75% {
         border-color: orange;
     }
-    100%{
+
+    100% {
         border-color: pink;
     }
-    
+
+}
+
+@media screen and (max-device-width: 1200px) {
+    .main {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .info {
+        text-align: center;
+        display: flex;
+    }
+
+    .nav1 {
+        font-size: 16px;
+        text-align: center;
+    }
 }
