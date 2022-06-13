@@ -1,0 +1,147 @@
+:root{
+
+    --color:white;
+    --bgcol:rgb(38, 37, 37);
+    --border:white;
+}
+
+.lane {
+    display: flex;
+    margin: 1rem 0rem;
+}
+
+.key {
+    
+    border: 2px solid var(--border);
+    width: 4vw;
+    height: 8vh;
+    margin: 0rem 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 5px;
+}
+
+.key:active {
+    transform: scale(0.95);
+
+}
+
+body {
+    min-width: 15vw;
+    padding: 2rem;
+    background-color: var(--bgcol);
+    color: var(--color);
+}
+
+.green {
+    border: 2.1px solid greenyellow;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    
+    font-family: cursive;
+    font-size: xx-large;
+}
+.center1 {
+    display: flex;
+    margin-left: 2rem;    
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: cursive;
+    font-size: xx-large;
+}
+
+nav {
+    border: 2px solid lightblue;
+    border-radius: 8px;
+    background-color: #12375c;
+    background-image: linear-gradient(62deg, #312381 0%, #8458ad 100%);
+
+
+    width: 90%;
+    height: 3rem;
+    margin-bottom: 3rem;
+}
+.key:hover{
+    border: 2px solid red;
+    animation: ani infinite 0.5s;
+    
+}
+
+#btn{
+
+    border: 2px solid white;
+    border-radius: 5px;
+}
+label{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    
+}
+#cars{
+
+    height:2rem;
+    padding: 4px;
+}
+
+.keyboardFull{
+    
+}
+.numpad{
+    
+    display:none;
+    
+    height: auto;
+}
+
+
+
+.keyn {
+    
+    border: 2px solid var(--border);
+    width: 4vw;
+    height: 8vh;
+    margin: 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 5px;
+}
+
+.keyn:active {
+    transform: scale(0.95);
+
+}
+
+.keyn:hover{
+    border: 2px solid red;
+    animation: ani infinite 0.5s;
+    
+}
+.gren{
+    border: 2.1px solid greenyellow !important;
+}
+
+
+@keyframes ani {
+
+    25%{
+        border-color: red;
+        
+    }
+    50%{
+        border-color: blue;
+    }
+    75%{
+        border-color: orange;
+    }
+    100%{
+        border-color: pink;
+    }
+    
+}
